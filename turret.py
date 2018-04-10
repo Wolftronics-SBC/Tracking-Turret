@@ -179,12 +179,12 @@ class Turret(object):
 
         # Stepper motor 1
         self.sm_x = self.mh.getStepper(200, 1)      # 200 steps/rev, motor port #1
-        self.sm_x.setSpeed(5)                       # 5 RPM
+        self.sm_x.setSpeed(100)                       # 5 RPM
         self.current_x_steps = 0
 
         # Stepper motor 2
         self.sm_y = self.mh.getStepper(200, 2)      # 200 steps/rev, motor port #2
-        self.sm_y.setSpeed(5)                       # 5 RPM
+        self.sm_y.setSpeed(100)                       # 5 RPM
         self.current_y_steps = 0
 
         # Relay
